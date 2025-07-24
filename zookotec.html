@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zokotec | Freelancing Experts</title>
+    <link rel="icon" href="WhatsApp Image 2025-07-24 at 13.54.15_4677b1b4.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Zokotec - Freelancing Solutions in Web, Mobile, Design & More">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #222;
+            background: #f5f6fa;
+        }
+        header {
+            background: #212A34;
+            color: #fff;
+            padding: 20px 0;
+            position: sticky; top: 0; z-index: 10;
+        }
+        .container { width: 90%; max-width: 1100px; margin: 0 auto; }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav a {
+            color: #eee;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color .2s;
+        }
+        nav a:hover { color: #ff683a; }
+        .logo { float: left; font-size: 1.6em; font-weight: bold; }
+
+        .hero {
+            background: linear-gradient(120deg,#292e49,#536976 70%);
+            color: #fff;
+            padding: 90px 0 60px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 2.8em; }
+        .hero p { font-size: 1.3em; max-width: 540px; margin: 16px auto 30px; }
+        .btn {
+            background: #ff683a;
+            color: #fff;
+            padding: 13px 35px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.1em;
+            text-decoration: none;
+            transition: background .2s;
+        }
+        .btn:hover { background: #fe9400; }
+
+        section { padding: 60px 0 40px; }
+        .section-title { font-size: 2em; color: #ff683a; margin-bottom: 30px; text-align: center; }
+
+        /* SERVICES */
+        .services { display: flex; flex-wrap: wrap; justify-content: center; gap: 32px;}
+        .service {
+            background: #fff;
+            border-radius: 12px;
+            padding: 36px 28px;
+            width: 280px;
+            box-shadow: 0 5px 30px rgba(30,42,61,0.07);
+            text-align: center;
+            transition: box-shadow .2s, transform .2s;
+        }
+        .service:hover { box-shadow: 0 8px 40px rgba(30,42,61,0.17); transform: translateY(-4px);}
+        .service i {
+            font-size: 2.5em;
+            color: #ff683a;
+            margin-bottom: 18px;
+        }
+        /* PORTFOLIO */
+        .portfolio-items { display: flex; flex-wrap: wrap; justify-content: center; gap: 32px; }
+        .portfolio-item {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(60,60,60,0.11);
+            width: 320px;
+            overflow: hidden;
+        }
+        .portfolio-item img {
+            width: 100%; height: 180px; object-fit: cover;
+        }
+        .portfolio-item .caption {
+            padding: 18px 15px;
+        }
+        /* TESTIMONIALS */
+        .testimonials { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;}
+        .testimonial {
+            max-width: 330px;
+            background: #fff;
+            border-radius: 10px;
+            padding: 28px 25px;
+            box-shadow: 0 2px 20px rgba(80,80,120,0.13);
+        }
+        .testimonial .author {
+            display: flex; align-items: center; gap: 12px; margin-top: 16px;
+            font-size: 0.97em; color: #444;
+        }
+        .testimonial .author img { width: 40px; border-radius: 50%; }
+        /* ABOUT */
+        .about { max-width: 730px; margin: 0 auto; text-align: center; font-size: 1.1em;}
+        /* CONTACT */
+        .contact-form {
+            max-width: 400px; background: #fff;
+            border-radius: 10px; padding: 28px; margin: 0 auto;
+            box-shadow: 0 2px 18px rgba(40,65,90,.11);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%; padding: 12px; margin: 9px 0 20px;
+            border: 1px solid #eee; border-radius: 6px; font-size: 1em;
+        }
+        .contact-form textarea { min-height: 100px; }
+        .contact-form button { width: 100%; }
+
+        footer {
+            background: #181a1f; color: #bbb;
+            text-align: center; font-size: 0.97em;
+            padding: 18px 0; margin-top: 50px;
+        }
+        @media (max-width: 900px) {
+          .services, .portfolio-items, .testimonials {flex-direction: column; align-items: center;}
+          .service, .portfolio-item, .testimonial {width: 95%;}
+        }
+        .logo img {
+            height: 50px; width: 50px; margin-right: 10px;
+        }
+        #imgg{
+            padding-top: -50px;
+        }
+    </style>
+    <!-- OPTIONAL: FontAwesome for icons (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+</head>
+<body>
+
+<header>
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+        <div class="logo" id="imgg" style="font-size: 30px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><img src="WhatsApp Image 2025-07-24 at 13.54.15_4677b1b4.jpg" height="70px" width="70px">Zokotec</div>
+        <nav>
+            <a href="#about" style="font-size: 30px;">About</a>
+            <a href="#services" style="font-size: 30px;">Services</a>
+            <a href="#portfolio" style="font-size: 30px;">Portfolio</a>
+            <a href="#testimonials" style="font-size: 30px;">Testimonials</a>
+            <a href="#contact" style="font-size: 30px;">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Empowering Your Business with Expert Freelancing</h1>
+        <p>
+            Zokotec connects you with skilled freelancers for Web Development, Mobile Apps, Design, Marketing & more.<br>
+            Customized solutions to make your projects shine.
+        </p>
+        <a href="#contact" class="btn">Let's Work Together</a>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container about">
+        <h2 class="section-title">About Us</h2>
+        <p>
+            At <strong>Zokotec</strong>, we bring together the brightest freelancers from around the world.
+            Our mission is simple: provide top-tier digital services to help your business grow.<br>
+            Quick turnaround, fair pricing, and a commitment to quality — that's the Zokotec way!
+        </p>
+    </div>
+</section>
+
+<section id="services">
+    <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Web Development</h3>
+                <p>Modern websites, e-commerce & web apps using latest technologies.</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-mobile"></i>
+                <h3>Logo Design</h3>
+                <p>Designing Creative Logos</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-pencil-ruler"></i>
+                <h3>UI/UX Design</h3>
+                <p>Beautiful, user-friendly interfaces that delight and convert.</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-bullhorn"></i>
+                <h3>Digital Marketing</h3>
+                <p>SEO, social media, paid ads and branding to grow your audience.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <div class="container">
+        <h2 class="section-title">Our Work</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="Sample Project 1">
+                <div class="caption">
+                    <strong>ShopEase</strong><br>
+                    E-commerce website for a leading fashion store.
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Sample Project 2">
+                <div class="caption">
+                    <strong>HealthApp</strong><br>
+                    Cross-platform health monitoring mobile app.
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80" alt="Sample Project 3">
+                <div class="caption">
+                    <strong>BrandBoost</strong><br>
+                    Digital marketing strategy for startup growth.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials">
+    <div class="container">
+        <h2 class="section-title">Happy Clients</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                “Zokotec delivered our new site on time and exceeded quality expectations. Great team to work with!”
+                <div class="author"><img src="https://randomuser.me/api/portraits/men/36.jpg" alt="">
+                <span>Arjun Patel,<br>UrbanMart CEO</span></div>
+            </div>
+            <div class="testimonial">
+                “Prompt, professional and skilled. Highly recommend Zokotec for app development work.”
+                <div class="author"><img src="https://randomuser.me/api/portraits/women/35.jpg" alt="">
+                <span>Lisa Roy,<br>Startario Co.</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <form class="contact-form" id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <textarea name="message" placeholder="How can we help you?" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div id="formMessage" style="margin-top: 15px; text-align:center; color: #46b552;"></div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Zokotec. All rights reserved.
+</footer>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('formMessage').innerText =
+        "Thank you! We'll get back to you soon.";
+    this.reset();
+});
+</script>
+
+</body>
+</html>
